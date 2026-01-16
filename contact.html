@@ -1,208 +1,261 @@
-<html lang="en-US" class="csstransforms csstransforms3d csstransitions js_active  vc_desktop  vc_transform  vc_transform "><head>
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>  Contact Page | Bethany Home Care</title>
-<link rel="stylesheet" id="contact-form-7-css" href="/css/styles.css" type="text/css" media="all">
-        <link rel="stylesheet" id="layerslider-css" href="/css/layerslider.css" type="text/css" media="all">
-        <link rel="stylesheet" id="ls-google-fonts-css" href="http://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900|Open+Sans:300|Indie+Flower:regular|Oswald:300,regular,700&amp;subset=latin,latin-ext" type="text/css" media="all">
-        <link rel="stylesheet" id="js_composer_front-css" href="/css/js_composer_front.css" type="text/css" media="all">
-        <link rel="stylesheet" id="wpex-style-css" href="/css/style.css" type="text/css" media="all">
-        <link rel="stylesheet" id="font-awesome-css" href="/css/font-awesome.min.css" type="text/css" media="all">
-        <link rel="stylesheet" id="wpex-responsive-css" href="/css/responsive.css" type="text/css" media="all">
-        <link rel="stylesheet" id="wpex-opensans-css" href="http://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C700italic%2C800italic%2C400%2C300%2C600%2C700%2C800&amp;subset=latin%2Ccyrillic-ext%2Cgreek-ext%2Cgreek%2Cvietnamese%2Clatin-ext%2Ccyrillic" type="text/css" media="all">
-        <link rel="stylesheet" id="vcex-lightbox-css" href="/css/lightbox.css" type="text/css" media="all">
-        <link rel="stylesheet" id="vcex-composer-extend-css" href="/css/vcex-shortcodes.css" type="text/css" media="all">
-        <link rel="stylesheet" id="vcex-font-awesome-css" href="/css/font-awesome.min.css" type="text/css" media="all">
-        <div class="fit-vids-style" id="fit-vids-style" style="display: none;">&shy;
-            <style>
-                .fluid-width-video-wrapper 
-                {
-                    width: 100%;
-                    position: relative;
-                    padding: 0;
-                }
-                .fluid-width-video-wrapper iframe, .fluid-width-video-wrapper object, .fluid-width-video-wrapper embed
-                {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                }
-            </style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Contact | Bethany Home Care</title>
+
+<!-- Modern Health Styles -->
+<link rel="stylesheet" href="/css/modern-health.css">
+
+<!-- Required Legacy Styles -->
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/css/layerslider.css">
+<link rel="stylesheet" href="/css/js_composer_front.css">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/responsive.css">
+
+<!-- Modern Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- FORCE MODERN OVERRIDES -->
+<style>
+
+/* ================= HEADER ================= */
+
+#site-header {
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+#site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px;
+}
+
+#site-logo img {
+  max-height: 60px;
+  display: block;
+}
+
+/* Navigation */
+#site-navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+}
+
+#site-navigation a {
+  text-decoration: none;
+  color: #2f7f7a;
+  font-weight: 500;
+  font-size: 15px;
+  position: relative;
+  padding: 6px 0;
+  transition: color 0.25s ease;
+}
+
+#site-navigation a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #6bbf9c;
+  transition: width 0.25s ease;
+}
+
+#site-navigation a:hover {
+  color: #225f5b;
+}
+
+#site-navigation a:hover::after {
+  width: 100%;
+}
+
+#site-navigation .current a {
+  font-weight: 600;
+}
+
+#site-navigation .current a::after {
+  width: 100%;
+}
+
+/* ================= PAGE HEADER ================= */
+
+.page-header {
+  background: linear-gradient(135deg, #e6f4f2, #fdeee8);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif !important;
+  background: #fafafa !important;
+  color: #2e2e2e;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Poppins', sans-serif !important;
+  color: #2f7f7a;
+}
+
+#site-header,
+#site-navigation-wrap {
+  background: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+
+.page-header {
+  background: linear-gradient(135deg, #e6f4f2, #fdeee8);
+  padding: 60px 0;
+}
+
+.page-header-title {
+  font-size: 36px !important;
+}
+
+.card {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+  margin-bottom: 40px;
+}
+
+.contact-info div {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.contact-info .fa {
+  color: #6bbf9c;
+  margin-right: 10px;
+}
+
+#footer,
+#footer-bottom {
+  background: #eef6f5 !important;
+}
+</style>
+
+<link rel="shortcut icon" href="/img/B-logo-250.png">
+
+<script src="/js/jquery.js"></script>
+<script src="/js/jquery-migrate.min.js"></script>
+</head>
+
+<body class="page full-width-main-layout">
+
+<div id="wrap">
+
+<!-- HEADER -->
+<header id="site-header">
+  <div class="container">
+    <div id="site-logo">
+      <a href="/"><img src="img/Bethany-logo.png" alt="Bethany Home Care"></a>
+    </div>
+    <nav id="site-navigation">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/services.html">Our Services</a></li>
+        <li><a href="/testimonials.html">Testimonials</a></li>
+        <li class="current"><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- PAGE HEADER -->
+<header class="page-header">
+  <div class="container">
+    <h1 class="page-header-title">Contact Us</h1>
+  </div>
+</header>
+
+<!-- CONTENT -->
+<main class="container" style="padding:60px 0;">
+
+  <!-- MAP -->
+  <section class="card">
+    <iframe
+      width="100%"
+      height="420"
+      frameborder="0"
+      style="border-radius:12px;border:0"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyANBTo36SdNIUbdDz9PuZjHg64EYGiMQOs&q=Bethany+Home+Health+Care,Moreno+Valley+CA"
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <!-- INFO -->
+  <section class="card">
+    <div class="row">
+
+      <div class="col" style="width:50%;float:left;padding-right:20px;">
+        <h3>Driving Directions</h3>
+        <p>
+          Coming Eastbound on the Moreno Valley Freeway (60), take the Market St/Brockton Ave exit
+          and turn right onto Brockton Ave. Follow for approximately 0.6 miles.
+        </p>
+        <p>
+          Coming Westbound on the Moreno Valley Freeway (60), take the Market St/Brockton Ave exit
+          and turn left onto Brockton Ave. Follow for approximately 0.6 miles.
+        </p>
+      </div>
+
+      <div class="col" style="width:50%;float:left;">
+        <h3>Visit Our Office</h3>
+        <div class="contact-info">
+          <div>4649 Brockton Avenue</div>
+          <div>Riverside, CA 92506</div>
+          <div><span class="fa fa-phone"></span>(951) 924-7751</div>
+          <div><span class="fa fa-print"></span>(951) 924-9042</div>
+          <div><span class="fa fa-envelope"></span>Contact@BethanyHomeCareCa.com</div>
         </div>
-        <script type="text/javascript" src="/js/jquery.js"></script>
-        <script type="text/javascript" src="/js/jquery-migrate.min.js"></script>
-        <script type="text/javascript" src="/js/layerslider.kreaturamedia.jquery.js"></script>
-        <script type="text/javascript" src="/js/greensock.js"></script>
-        <script type="text/javascript" src="/js/layerslider.transitions.js"></script>
+      </div>
 
+      <div style="clear:both;"></div>
+    </div>
+  </section>
 
-<!-- WooCommerce Version -->
-<meta name="generator" content="WooCommerce 2.1.2">
+</main>
 
-<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--><!-- Custom CSS -->
-<style type="text/css">
-#site-header { background: #f7dcd2; }.is-sticky #site-header { border-bottom: 0; }#site-navigation-wrap { background:#f7dcd2; }#site-navigation li, #site-navigation a, #site-navigation { border-color:#adadad; }#site-navigation .dropdown-menu > li > a { color:#1e73be; }#site-navigation .dropdown-menu > li > a:hover { color:#000000; }#site-navigation .dropdown-menu > .current-menu-item > a, #site-navigation .dropdown-menu > .current-menu-item > a:hover { color:#adadad; }#sidebar { background:#f7dcd2; }#footer { background:#f7dcd2; }#footer-bottom { background:#f7dcd2; }#footer-bottom, #footer-bottom p { color:#f7dcd2; }
-</style><!-- Custom CSS -->
-<style type="text/css">
-@media only screen and (min-width: 960px) {#sidebar { width: 250px; }}
-</style><!-- Favicon --><link rel="shortcut icon" href="/img/B-logo-250.png"><!-- Apple iPhone Icon --><link rel="apple-touch-icon-precomposed" href="/img/Bethany-logo.png"><!-- Apple iPhone Retina Icon --><link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/Bethany-logo.png"><!-- Apple iPhone Icon --><link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/Bethany-logo.png"><!-- Retina Logo --> <script type="text/javascript"> jQuery(function($){ if (window.devicePixelRatio == 2) { $("#masthead .logo img").attr("src", "/img/Bethany-logo.png"); $("#masthead .logo img").attr("width", "40"); $("#masthead .logo img").attr("height", "90"); } }); </script><!-- Custom CSS -->
-<style type="text/css">
-body, .boxed-main-layout { background-color: #f7dcd2; }
-</style>	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
-<style type="text/css" class="redux-typography">body{font-family:Georgia, serif;font-weight:400;font-style:normal;font-size:13px;color:#555;}h1,h2,h3,h4,h5,h6,.theme-heading, .widget-title{font-family:Georgia, serif;font-weight:normal;font-style:normal;}#site-logo a{font-family:Georgia, serif;font-weight:700;font-style:normal;font-size:24px;}.main-navigation .sf-menu a{font-family:Georgia, serif;font-weight:400;font-style:normal;font-size:15px;}#site-header .dropdown-menu ul a{font-family:Georgia, serif;font-weight:400;font-style:normal;font-size:15px;}.page-header-title{font-family:Georgia, serif;font-weight:400;font-style:normal;font-size:21px;}</style><style type="text/css" class="redux-spacing">#sidebar{padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;}</style><style type="text/css" class="redux-border">#sidebar{border-top:inherit solid inherit;border-right:inherit solid inherit;border-bottom:inherit solid inherit;border-left:inherit solid inherit;}</style><style type="text/css" class="redux-border">#footer{border-top:inherit solid inherit;border-right:inherit solid inherit;border-bottom:inherit solid inherit;border-left:inherit solid inherit;}</style><style type="text/css" class="redux-border">#footer-bottom{border-top:inherit solid inherit;border-right:inherit solid inherit;border-bottom:inherit solid inherit;border-left:inherit solid inherit;}</style></head>
-
-<!-- Begin Body -->
-<body class="page page-id-1345 page-template-default wpex-theme full-width-main-layout wpex-responsive no-header-margin wpb-js-composer js-comp-ver-3.7.1 vc_responsive" style="">
-
-<div id="wrap" class="clr">
-
-<div id="site-header-sticky-wrapper" class="sticky-wrapper" style="height: 150px;"><header id="site-header" class="header-one clr fixed-scroll" role="banner" data-position="relative" data-top="0px">
-<div id="site-header-inner" class="header-one-inner container clr">
-
-<!-- Mobile navigation -->
-<div id="sidr-close">
-<a href="#sidr-close" class="toggle-sidr-close"></a>
-</div>
-<div id="mobile-menu" class="clr">
-<a href="#sidr" class="mobile-menu-toggle"><span class="fa fa-bars"></span></a>
-<a href="/" title="" class="mobile-menu-extra-icons mobile-menu-Home"><span class="fa fa-Home"></span></a>
-<a href="/about.html" title="" class="mobile-menu-extra-icons mobile-menu-About"><span class="fa fa-About"></span></a>
-<a href="/services.html" title="" class="mobile-menu-extra-icons mobile-menu-Our Services"><span class="fa fa-Our Services"></span></a>
-<a href="/testimonials.html" title="" class="mobile-menu-extra-icons mobile-menu-Testimonials"><span class="fa fa-Testimonials"></span></a>
-<a href="/contact.html" title="" class="mobile-menu-extra-icons mobile-menu-Contact"><span class="fa fa-Contact"></span></a>
-</div><!-- #mobile-menu -->
-
-<div id="site-logo" class="header-one-logo">
-<a href="/" title="Bethany Home Care" rel="home"><img src="/img/Bethany-logo.png" alt=""></a>
-</div><!-- .header-one-logo -->
-
-<div id="site-navigation-wrap" class="clr navbar-style-one">   
-<nav id="site-navigation" class="navigation main-navigation clr " role="navigation">
-<div class="menu-main-menu-new-container"><ul id="menu-main-menu-new" class="dropdown-menu sf-menu sf-js-enabled"><li id="menu-item-2937" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2937"><a href="/">Home</a></li>
-<li id="menu-item-3322" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3322"><a href="/about.html">About</a></li>
-<li id="menu-item-3144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3144"><a href="/services.html">Our Services</a></li>
-<li id="menu-item-3147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3147"><a href="/testimonials.html">Testimonials</a></li>
-<li id="menu-item-3145" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1345 current_page_item menu-item-3145"><a href="/contact.html">Contact</a></li>
-</ul></div>							</nav><!-- #site-navigation -->
-</div><!-- #navbar-one -->
-</div><!-- #navbar-inner -->
-</header></div><!-- #header -->		
-<div id="main" class="site-main clr">	
-
-
-<div id="content-wrap" class="container clr full-screen">
-<section id="primary" class="content-area clr">
-<div id="content" class="clr site-content" role="main">
-<article class="clr">
-<div class="entry-content entry clr">
-<div class="clr vcex-row-skin-" style="padding-top: 60px;padding-bottom: 60px;"><div class="wpb_row vc_row-fluid  container">
-<div class="vc_span12 wpb_column column_container ">
-
-<div class="wpb_raw_code wpb_content_element wpb_raw_html">
-<div class="wpb_wrapper">
-<iframe width="1000" height="500" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyANBTo36SdNIUbdDz9PuZjHg64EYGiMQOs&amp;q=Bethany+Home+Health+Care,Moreno+Valley+CA" allowfullscreen=""> </iframe>
-</div> 
-</div> <div class="clr vcex-row-skin-"><div class="wpb_row vc_row-fluid  ">
-<div class="vc_span6 wpb_column column_container ">
-<div class="vc_text_separator wpb_content_element separator_align_left vc_text_separator_four" style="font-size: 16px;font-weight: 400;"><span>Driving Directions</span></div>
-
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper">
-<p>Coming Eastbound on the Moreno Valley Freeway (60), take the Market St/Brockton Ave exit and turn right onto Brockton Ave. Follow Brockton Ave for approximately 0.6 miles. The office at 4649 Brockton Ave will be located on the right-hand side.</p>
-<p>Coming Westbound on the Moreno Valley Freeway (60), take the Market St/Brockton Ave exit and turn left onto Brockton Ave. Follow Brockton Ave for approximately 0.6 miles. The office at 4649 Brockton Ave will be located on the right-hand side.</p>
-
-</div> 
-</div> 
-</div> 
-
-<div class="vc_span6 wpb_column column_container ">
-<div class="vc_text_separator wpb_content_element separator_align_left vc_text_separator_four" style="font-size: 16px;font-weight: 400;"><span>Visit Our Offices</span></div>
-
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper">
-<div>4649 Brockton Avenue</div>
-<div>Riverside, CA 92506</div>
-
-</div> 
-</div> <hr class="vcex-spacing " style="height: 10px"><div class="vcex-list_item  textleft"><span class="fa fa-phone" style="color:#3b86b0;"></span>(951) 924-7751</div><div class="vcex-list_item  textleft"><span class="fa fa-print" style="color:#2e698a;"></span>(951) 924-9042</div><div class="vcex-list_item  textleft"><span class="fa fa-envelope" style="color:#214c64;"></span>Contact@BethanyHomeCareCa.com</div>
-</div> 
+<!-- CALL OUT -->
+<div id="footer-callout-wrap">
+  <div id="footer-callout" class="container">
+    <p style="text-align:center;color:#ffffff;">
+      Call <strong>(951) 924-7751</strong> anytime. One phone call is all that is needed to refer a patient.
+    </p>
+  </div>
 </div>
 
-</div> 
-</div></div>
-</div><!-- .entry-content -->
-</article><!-- #post -->
-</div><!-- #content -->
-</section><!-- #primary -->
-</div><!-- #content-wrap -->
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="container" style="text-align:center;padding:20px;">
+    <p>© 2015 Bethany Home Care. All Rights Reserved.</p>
+  </div>
+</footer>
 
+</div>
 
-</div><!-- #main-content -->	
+<script src="/js/scripts.js"></script>
+<script src="/js/global.js"></script>
+<script src="/js/js_composer_front.js"></script>
 
-<div id="footer-callout-wrap" class="clr">
-<div id="footer-callout" class="clr container">
-<div id="footer-callout-left" class="clr full-width">
-<p style="text-align: center;">Call (951) 924-7751 anytime. &nbsp;One phone is all that is needed to refer a patient. &nbsp;We obtain the required authorization to provide care.</p>					</div><!-- #footer-callout-left -->
-</div><!-- #footer-callout -->
-</div><!-- #footer-callout-wrap -->
-
-
-<footer id="footer" class="site-footer footer-one">
-<div id="footer-widgets" class="footer-one-widgets container row clr ">
-<div class="footer-box span_1_of_4 col col-1">
-</div><!-- .footer-one-box -->
-<div class="footer-box span_1_of_4 col col-2">
-</div><!-- .footer-one-box -->
-<div class="footer-box span_1_of_4 col  col-3 ">
-</div><!-- .footer-one-box -->
-<div class="footer-box span_1_of_4 col  col-4">
-</div><!-- .footer-box -->
-</div><!-- #footer-widgets -->
-</footer><!-- #footer -->   
-
-
-
-<div id="footer-bottom" class="footer-one-bottom clr">
-<div id="footer-bottom-inner" class="footer-one-bottom-inner container clr">
-<div id="copyright" class="clr footer-one-copyright" role="contentinfo">
-Copyright 2015 - All Rights Reserved			</div><!-- #copyright -->
-<div id="footer-menu" class="footer-one-menu clr">
-</div><!-- #footer-menu -->
-</div><!-- #footer-bottom-inner -->
-</div><!-- #footer-bottom -->
-
-</div><!-- #wrap -->
-
-<!-- MOBILE MENU -->
-<form method="get" class="mobile-searchform" action="/" role="search">
-<input type="search" id="mobile-search-input" name="s" value="search" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
-</form>
-
-<a href="#" id="site-scroll-top"><span class="fa fa-chevron-up"></span></a>
-
-
-
-<script type="text/javascript" src="/js/jquery.form.min.js"></script>
-<script type="text/javascript" src="/js/scripts.js"></script>
-<script type="text/javascript" src="/js/retina.js"></script>
-<script type="text/javascript" src="/js/plugins.js"></script>
-<script type="text/javascript">
-/* <![CDATA[ */
-var wpexLocalize = {"responsiveMenuText":"Menu"};
-/* ]]> */
-</script>
-<script type="text/javascript" src="/js/global.js"></script>
-<script type="text/javascript" src="/js/js_composer_front.js"></script>
-
-
-<div id="lean_overlay"></div><div id="lean_overlay"></div><div id="sidr-main" class="sidr left"><div class="sidr-inner">
-<a href="#sidr-close" class="sidr-class-toggle-sidr-close"></a>
-</div><div class="sidr-inner">
-<div class="sidr-class-menu-main-menu-new-container"><ul id="sidr-id-menu-main-menu-new" class="sidr-class-dropdown-menu sidr-class-sf-menu sidr-class-sf-js-enabled"><li id="sidr-id-menu-item-2937" class="sidr-class-menu-item sidr-class-menu-item-type-custom sidr-class-menu-item-object-custom sidr-class-menu-item-2937"><a href="/">Home</a></li>
-<li id="sidr-id-menu-item-3322" class="sidr-class-menu-item sidr-class-menu-item-type-post_type sidr-class-menu-item-object-page sidr-class-menu-item-3322"><a href="/about.html">About</a></li>
-<li id="sidr-id-menu-item-3144" class="sidr-class-menu-item sidr-class-menu-item-type-post_type sidr-class-menu-item-object-page sidr-class-menu-item-3144"><a href="/services.html">Our Services</a></li>
-<li id="sidr-id-menu-item-3147" class="sidr-class-menu-item sidr-class-menu-item-type-post_type sidr-class-menu-item-object-page sidr-class-menu-item-3147"><a href="/testimonials.html">Testimonials</a></li>
-<li id="sidr-id-menu-item-3145" class="sidr-class-menu-item sidr-class-menu-item-type-post_type sidr-class-menu-item-object-page sidr-class-current-menu-item sidr-class-page_item sidr-class-page-item-1345 sidr-class-current_page_item sidr-class-menu-item-3145"><a href="/contact.html">Contact</a></li>
-</ul></div>							</div></div></body></html>
+</body>
+</html>
