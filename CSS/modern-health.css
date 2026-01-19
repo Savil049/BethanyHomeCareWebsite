@@ -92,3 +92,47 @@ input[type="submit"] {
   padding: 25px;
   margin-top: 40px;
 }
+/* ================= SERVICES GRID ================= */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
+  margin: 50px 0;
+}
+
+/* Make each service card BIGGER */
+.services-grid article {
+  background: #ffffff;
+  padding: 40px 36px;
+  border-radius: 18px;
+  box-shadow: 0 14px 35px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover = subtle lift (professional feel) */
+.services-grid article:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+}
+
+/* Headings */
+.services-grid h3 {
+  font-size: 22px;
+  margin-bottom: 14px;
+  color: #2f7f7a;
+}
+
+/* Text */
+.services-grid p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Mobile: single column */
+@media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
